@@ -1,7 +1,7 @@
 import classNames from 'classnames';
 import PropTypes  from 'prop-types';
 import React      from 'react';
-import {Icon} from '../../icon.jsx';
+import Icon from '../../icon.jsx';
 
 const SVGArrow = ({ className, classNamePath }) => (
     <svg className={classNames('inline-icon', className)} width='16' height='16'>
@@ -14,12 +14,13 @@ const SVGArrow = ({ className, classNamePath }) => (
     </svg>
 );
 
+const IconArrow = (props) => <Icon icon={SVGArrow} {...props} />
+
 SVGArrow.propTypes = {
     className    : PropTypes.string,
     classNamePath: PropTypes.string,
 };
 
-const IconArrow = (props) => <Icon icon={SVGArrow} {...props} />
 IconArrow.displayName = 'IconArrow';
 SVGArrow.displayName = 'SVGArrow';
 
