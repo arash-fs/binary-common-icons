@@ -16,14 +16,13 @@ SVGIcon provide a svg file that will not pure component and will re render.
 IconIcon provide in a wrapped pure component that will not re render,
 
 ```python
-import { IconArrow } from 'binary-common-icons';
-import { SVGArrow } from 'binary-common-icons';
+import { IconFRXAUDCAD } from 'binary-common-icons';
+import { SVGFRXAUDCAD } from 'binary-common-icons';
 
-<IconArrow className='datepicker__arrowhead' />
-<SVGArrow className='datepicker__arrowhead' />
+<IconFRXAUDCAD />
+<SVGFRXAUDCAD />
 ```
-
-We can pass other attributes as a props:
+It is better to handle these in parent component (For example Use ```onClick``` on parent component) but also we can use it in package component.
 
 category as {string}
 
@@ -47,5 +46,5 @@ const icon_className = classNames(
     'advanced-simple-toggle__icon',
     'select-arrow',
 )
-<IconArrow className={icon_className} />
+<IconFRXAUDCAD className={icon_className} />
 ```
