@@ -16,8 +16,8 @@ SVGIcon provide a svg file that will not pure component and will re render.
 IconIcon provide in a wrapped pure component that will not re render,
 
 ```python
-import { IconFRXAUDCAD } from 'binary-common-icons';
-import { SVGFRXAUDCAD } from 'binary-common-icons';
+import { IconFRXAUDCAD } from 'binary-common-icons/build/Icons/Underlying/ic-FRXAUDCAD';
+import { SVGFRXAUDCAD } from 'binary-common-icons/build/Icons/Underlying/ic-FRXAUDCAD';
 
 <IconFRXAUDCAD />
 <SVGFRXAUDCAD />
